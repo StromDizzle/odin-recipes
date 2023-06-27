@@ -1,0 +1,27 @@
+* {
+    font-family:"Helvetica",  'Times New Roman', sans-serif;
+}
+
+body {
+    background-color: #f5fffd;
+}
+
+h1 {
+    text-align: center;
+}
+
+img {
+    float:left;
+    margin-left: 30px;
+    margin-right:30px;
+}
+
+.directions-container {
+    background-color: #3E5E58;
+    color: white;
+}
+
+.recipe-info {
+    float:right;
+    background-color: #D5DEDC;
+}
