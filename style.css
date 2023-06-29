@@ -16,12 +16,49 @@ img {
     margin-right:30px;
 }
 
+a {
+    color:#D5DEDC;
+    
+}
+
+a:visited {
+    color:#D5DEDC;
+}
+
+a:hover {
+    color:#424544;
+    background-color: #D5DEDC;
+}   
+
+a:active {
+    color:#D5DEDC;
+}  
+
+li a {
+    padding:12px;
+    border-style:solid;
+    border-color: black;
+    background-color: #424544;
+}
+
+.menu li {
+    display:inline-block;
+}
+
+ul li {
+    padding:12px;
+}
+
 .directions-container {
     background-color: #3E5E58;
     color: white;
+    padding:12px;
 }
 
 .recipe-info {
     float:right;
     background-color: #D5DEDC;
+    border-style:solid;
+    border-color:#424544;
+    padding:12px;
 }
