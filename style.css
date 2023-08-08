@@ -77,6 +77,7 @@ li a {
 .main-chunk {
     display: flex;
     gap: 16px;
+    justify-content: space-around;
 }
 
 .main-middle-chunk {
@@ -94,7 +95,6 @@ li a {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding:12px;
 }
 
 .ingredients ul {
