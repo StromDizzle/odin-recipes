@@ -1,11 +1,16 @@
-/*
-Colors:
-#f5fffd
-#D5DEDC
-#424544
-#3E5E58
-*/
 
+:root {
+    --body-background-color: #f5fffd;
+    --primary-background-color: #3E5E58;
+    --secondary-background-color: #D5DEDC;
+    --primary-border-color: black;
+    --header-text-color: #3E5E58;
+    --link-text-color: #D5DEDC;
+    --link-background-color: #424544;
+    --hover-link-text-color: #424544;
+    --hover-link-background-color: #D5DEDC;
+    --alternate-text-color: white;
+}
 
 * {
     font-family:"Helvetica",  'Times New Roman', sans-serif;
@@ -15,7 +20,7 @@ body {
     display: flex;
     flex-direction: column;
     gap: 32px;
-    background-color: #f5fffd;
+    background-color: var(--body-background-color);
 }
 
 ul {
@@ -24,37 +29,29 @@ ul {
 
 img {
     border-style:solid;
-    border-color:#424544;
+    border-color:var(--primary-border-color);
 }
 
 a {
-    color:#D5DEDC;    
-}
-
-a:visited {
-    color:#D5DEDC;
+    color:var(--link-text-color);    
 }
 
 a:hover {
-    color:#424544;
-    background-color: #D5DEDC;
+    color:var(--hover-link-text-color);
+    background-color: var(--hover-link-background-color);
 }   
-
-a:active {
-    color:#D5DEDC;
-}  
 
 li a {
     padding:12px;
     border-style:solid;
-    border-color: black;
-    background-color: #424544;
+    border-color: var(--primary-border-color);
+    background-color: var(--link-background-color);
 }
 
 .header {
     display:flex;
     justify-content: center;
-    color: #3E5E58;
+    color: var(--header-text-color);
 }
 
 .menu {
@@ -71,6 +68,8 @@ li a {
 .recipe-title {
     display:flex;
     justify-content: center;
+    background-color: var(--primary-background-color);
+    color: var(--alternate-text-color);
 }
 
 .main-chunk {
@@ -99,14 +98,19 @@ li a {
 .directions-container {
     display: flex;
     flex-direction: column;
-    background-color: #3E5E58;
+    background-color: var(--primary-background-color);
     align-items: center;
     align-self:center;
-    color: white;
+    color: var(--alternate-text-color);
     padding:12px;
     width: min(80%, 55ch);
     min-width: 400px;
-    /* width: clamp(55ch,80%, 85ch); */
+    border-style: solid;
+    border-color: var(--primary-border-color);
+}
+
+.directions-container > ol {
+    margin-right: 2rem;
 }
 
 .directions-container > ol > li {
@@ -140,7 +144,7 @@ li a {
     padding: 16px;
     min-width: 200px;
     list-style-type: none;
-    background-color: #D5DEDC;
+    background-color: var(--secondary-background-color);
     border-style:solid;
-    border-color:#424544;
+    border-color:var(--primary-border-color);
 }
