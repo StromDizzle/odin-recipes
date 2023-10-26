@@ -27,7 +27,7 @@ ul {
     padding-left: 0px;
 }
 
-img {
+.recipe-image > img {
     border-style:solid;
     border-color:var(--primary-border-color);
 }
@@ -43,15 +43,15 @@ a:hover {
 
 li a {
     padding:12px;
-    border-style:solid;
-    border-color: var(--primary-border-color);
+    border-radius: 0.75rem 0.75rem 0 0;
     background-color: var(--link-background-color);
 }
 
 .header {
     display:flex;
     justify-content: center;
-    color: var(--header-text-color);
+    background-color: var(--primary-background-color);
+    color: var(--alternate-text-color);
 }
 
 .menu {
@@ -61,8 +61,42 @@ li a {
 
 .menu ul {
     display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
     gap: 16px;
     list-style-type: none;
+    padding: 50px;
+}
+
+.menu > ul > li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    border-style: solid;
+    border-color: var(--primary-border-color);
+    border-radius: 1rem 1rem 0 0;
+    width: min(250px, 50%);
+}
+
+.menu > ul > li > a {
+    z-index: 1;
+    text-align: center;
+    width: 91%;
+}
+
+.menu > ul > li > a::after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    content: ' ';
+}
+
+.menu > ul > li > img {
+    width: min(250px, 100%);
+    height: auto;
 }
 
 .recipe-title {
@@ -103,7 +137,7 @@ li a {
     align-self:center;
     color: var(--alternate-text-color);
     padding:12px;
-    width: min(80%, 55ch);
+    width: min(80%, 85ch);
     min-width: 400px;
     border-style: solid;
     border-color: var(--primary-border-color);
