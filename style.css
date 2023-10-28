@@ -84,6 +84,7 @@ a {
 
 .menu > ul > li:hover {
     background-color: var(--hover-link-background-color);
+    transform: scale(1.1);
 
 }
 
@@ -138,8 +139,23 @@ a {
 .main-middle-chunk {
     display: flex;
     flex-direction: column;
+    gap: 1rem;
     min-width: 250px;
     width: clamp(25%, 325px, 50%);
+}
+
+.ingredients {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+}
+
+.ingredients ul {
+    padding-left: 16px;
+}
+
+.ingredients > ul > li {
+    width: clamp(35ch, 33%, 75ch);
 }
 
 .directions-container {
@@ -175,14 +191,6 @@ a {
 .recipe-description > p{
     width: clamp(45ch, 100%, 75ch);
     max-width: 100%;
-}
-
-.ingredients ul {
-    padding-left: 16px;
-}
-
-.ingredients > ul > li {
-    width: clamp(35ch, 33%, 75ch);
 }
 
 .recipe-info ul {
